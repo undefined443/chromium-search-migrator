@@ -4,7 +4,37 @@ version = "0.1.0"
 description = "Migrate Chromium search engines between Web Data databases."
 readme = "README.md"
 requires-python = ">=3.11"
+license = "MIT"
+authors = [
+    { name = "undefined443" },
+]
+keywords = [
+    "browser",
+    "chrome",
+    "chromium",
+    "cli",
+    "migration",
+    "search-engine",
+    "sqlite",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+    "Topic :: Utilities",
+]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/undefined443/chromium-search-migrator"
+Repository = "https://github.com/undefined443/chromium-search-migrator"
+Issues = "https://github.com/undefined443/chromium-search-migrator/issues"
 
 [project.scripts]
 chromium-search-migrator = "chromium_search_migrator.cli:main"
