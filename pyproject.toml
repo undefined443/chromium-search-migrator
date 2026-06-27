@@ -1,0 +1,37 @@
+[project]
+name = "chromium-search-migrator"
+version = "0.1.0"
+description = "Migrate Chromium search engines between Web Data databases."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+chromium-search-migrator = "chromium_search_migrator.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+default = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pyright]
+include = ["src"]
+pythonVersion = "3.11"
+typeCheckingMode = "strict"
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.411",
+    "ruff>=0.15.20",
+]
